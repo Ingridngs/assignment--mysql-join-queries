@@ -1,4 +1,3 @@
-# assignment--mysql-join-queries
 #1 Write a query to get the department name and number of employees in the department.
 
 SELECT E.DEPARTMENT_ID, D.DEPARTMENT_NAME, COUNT(*) FROM Employees E INNER JOIN Departments D ON E.DEPARTMENT_ID= D.DEPARTMENT_ID GROUP BY E.DEPARTMENT_ID;
@@ -20,7 +19,6 @@ SELECT JOB_TITLE, AVG(MIN_SALARY+MAX_SALARY)/2 FROM Jobs GROUP BY JOB_TITLE;
 SELECT E.FIRST_NAME, (E.SALARY-J.MIN_SALARY) AS 'DIFFERENCE IN MINIMUNSALARY', J.JOB_TITLE FROM Employees E INNER JOIN Jobs J ON E.JOB_ID=J.JOB_ID;
 
 #7 Write a query to display the job history that were done by any employee who is currently drawing more than 10000 of salary.
-
 
 
 
